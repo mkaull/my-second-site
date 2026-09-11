@@ -19,7 +19,7 @@ After STOP 1, help the student propose and approve the six TARGET lines and one 
 
 ## My standing rule
 
-[One observable, student-approved rule that protects this project's purpose or experience.]
+Never display deal results until the visitor has selected a departure city, destination, and valid date range; when results appear, label them as sample packages and rank them from lowest total price to highest.
 
 ## Workflow
 
