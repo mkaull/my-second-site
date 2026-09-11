@@ -1,12 +1,10 @@
 # TARGET: today's build
 
-Choose the idea, person, interaction, and visual direction. The agent can help phrase and save your decisions after you approve them. The provided scope and review safeguards stay in place.
-
-- **Thing:** [My one-page website or mini-app and its main interaction.]
-- **Audience:** [One specific person, and what they want to do or understand.]
-- **Requirements:** One working primary interaction; selected states and results are understandable; honor my approved standing rule in AGENTS.md.
+- **Thing:** A one-page “Deal Orbit” vacation-package finder where a student selects a destination on an interactive globe and enters travel dates to reveal the cheapest sample vacation packages.
+- **Audience:** A college student who wants a quick, visual way to compare affordable trips for a specific location and time period.
+- **Requirements:** One working primary interaction: choose a departure city, destination, and valid date range, then view ranked sample packages. Show a plane animation traveling from the chosen departure point to the destination, with selected states and results that are easy to understand. Honor my approved standing rule in AGENTS.md.
 - **Guardrails:** Static browser code. No required external service, keys, accounts, runtime AI, or private data. Label fictional or sample content. Preserve the example and publishing setup. Work on a branch and wait for human review before shipping.
-- **Experience:** [My visual reference or direction and the most important layout or interaction relationship.]
-- **Test:** I can complete the main action, check one boundary or factual claim, and point to my standing rule's effect in the actual preview. After I approve and merge, the same registered Pages URL works.
+- **Experience:** A dark, polished globe interface with destination markers; after selection, an animated plane follows a visible route to the destination and a large illustrative vacation image becomes the backdrop for the ranked deal cards.
+- **Test:** I can choose a departure city and destination, enter a valid date range, watch the route animation, and see clearly labeled sample packages ranked by total price. I can test an incomplete date selection, point to the standing rule's effect, and—after approval and merge—use the same registered Pages URL.
 
 The coastal example has a [completed TARGET](examples/coast/SPEC.md). It demonstrates the format, not a required topic.
