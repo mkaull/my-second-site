@@ -1,24 +1,152 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My next idea · The Understudy</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#f5f2e9;color:#20281f;font:18px/1.55 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:40px 6vw}header{display:flex;justify-content:space-between;border-bottom:1px solid #b8bcae;padding-bottom:22px;font-size:13px;letter-spacing:.12em;text-transform:uppercase}.stage{display:grid;grid-template-columns:1.5fr 1fr;gap:7vw;align-items:center;min-height:65vh}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(60px,8vw,112px);letter-spacing:-.06em;line-height:.96;margin:40px 0 25px}p{max-width:530px}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase}.mark{height:280px;position:relative;display:grid;place-items:center}.mark span{position:absolute;width:160px;height:220px;border:2px solid #42613b;transform:rotate(var(--r));transition:transform .5s}.mark span:nth-child(1){--r:-25deg}.mark span:nth-child(2){--r:0deg;background:#dbe4be}.mark span:nth-child(3){--r:25deg}.mark:hover span{transform:rotate(calc(var(--r) * 1.3))}a{color:inherit;text-underline-offset:5px}.links{display:flex;flex-wrap:wrap;gap:24px;padding:25px 0}.primary{background:#263d24;color:#fff;padding:12px 20px;text-decoration:none}footer{border-top:1px solid #b8bcae;padding-top:24px;font-size:14px}a:focus-visible{outline:3px solid #a54919;outline-offset:5px}@media(max-width:650px){.stage{display:block;min-height:0}.mark{height:170px;margin:30px 0}.mark span{width:100px;height:140px}header{gap:20px}main{padding:25px 7vw}}@media(prefers-reduced-motion:reduce){.mark span{transition:none}.mark:hover span{transform:rotate(var(--r))}}.live{border-top:1px solid #b8bcae;padding:22px 0 4px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}.live code{flex:1 1 300px;min-width:0;background:#fff;border:1px solid #b8bcae;padding:11px 13px;font-size:14px;overflow-wrap:anywhere}.live button{min-height:44px;padding:11px 18px;font:inherit;font-weight:600;color:#fff;background:#263d24;border:0;cursor:pointer}.live button:focus-visible{outline:3px solid #a54919;outline-offset:5px}.live small{flex-basis:100%;font-size:14px;color:#4a5247}</style>
-<main><header><b>CPVC / The Understudy</b><span>Session 02 · Starter</span></header><section class="stage"><div><h1>A small site.<br>A real beginning.</h1><p>This is my working starter. My own one-page site and one useful interaction come next.</p><p class="eyebrow">Published first. Made mine next.</p></div><div class="mark" aria-hidden="true"><span></span><span></span><span></span></div></section><div class="live"><code id="liveurl">Open this page over http:// or https:// to see its address.</code><button id="copy" type="button">Copy link</button><small id="copyhint">This is the address you submit. Not your GitHub repository address.</small></div><div class="links"><a class="primary" href="https://calpolyvibecoding.com/portal">Submit my live URL ↗</a><a id="guide" href="https://github.com/calpolyvibecoding-01/cpvc-02-understudy-template#readme">Follow the build guide →</a><a href="examples/coast/">See the coastal example →</a></div><footer>Deploy this untouched starter, open the actual live URL, then confirm your portal submission. <strong>STOP 1:</strong> only then brief the agent and build your own idea. Keep the same root URL as your site grows.</footer></main>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deal Orbit — sample vacation packages</title>
+<style>
+:root{--ink:#eef5ff;--muted:#9eb0cf;--panel:rgba(14,24,53,.84);--line:rgba(188,211,255,.18);--mint:#a7f3d0;--coral:#ff8a73;--sky:#172650}*{box-sizing:border-box}html{background:#081126}body{margin:0;min-width:320px;background:radial-gradient(circle at 70% 0,#1e4382 0,transparent 34%),linear-gradient(140deg,#071027,#0c1736 58%,#132551);color:var(--ink);font:16px/1.5 Inter,ui-sans-serif,system-ui,sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--mint);outline-offset:3px}.shell{width:min(1180px,92vw);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:24px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}.brand-mark{display:grid;place-items:center;width:33px;height:33px;border-radius:50%;background:conic-gradient(var(--mint),#6fc6ff,#8d73ff,var(--mint));color:#0b1532;font-size:17px}.eyebrow{margin:0;color:var(--mint);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.notice{margin:0;color:var(--muted);font-size:13px}.hero{display:grid;grid-template-columns:1fr .95fr;gap:42px;align-items:center;padding:66px 0 34px}.hero h1{max-width:620px;margin:13px 0 18px;font-size:clamp(45px,6vw,79px);line-height:.97;letter-spacing:-.065em}.hero h1 em{font-style:normal;color:var(--mint)}.lede{max-width:560px;color:#c5d1e8;font-size:19px}.stat-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.chip{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:#b7c7e3;font-size:13px}.trip-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:linear-gradient(140deg,rgba(41,72,132,.85),rgba(13,25,58,.94));padding:22px;box-shadow:0 22px 70px rgba(0,0,0,.28)}.trip-card:after{content:"";position:absolute;width:180px;height:180px;right:-65px;top:-54px;border-radius:50%;border:1px solid rgba(167,243,208,.22);box-shadow:0 0 0 28px rgba(167,243,208,.04),0 0 0 58px rgba(167,243,208,.03)}.trip-card h2{position:relative;margin:0 0 4px;font-size:17px}.trip-card p{position:relative;margin:0;color:#c2d1ec;font-size:14px}.orbit{position:relative;margin:28px auto 4px;width:min(310px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 36% 27%,#3e7dcc 0 3%,transparent 3.5%),radial-gradient(circle at 64% 62%,#71b68e 0 4%,transparent 4.5%),radial-gradient(ellipse at 30% 42%,#3c9a84 0 10%,transparent 11%),radial-gradient(ellipse at 64% 42%,#55aa70 0 15%,transparent 16%),radial-gradient(ellipse at 51% 73%,#3e7e69 0 8%,transparent 9%),linear-gradient(135deg,#225db5,#1a407f 62%,#13295e);box-shadow:inset -26px -18px 38px rgba(0,0,0,.4),0 0 0 14px rgba(91,156,244,.06),0 24px 60px rgba(0,0,0,.34)}.orbit:before,.orbit:after{content:"";position:absolute;inset:7%;border:1px solid rgba(231,244,255,.3);border-radius:50%;transform:rotate(-25deg) scaleX(.46)}.orbit:after{transform:rotate(31deg) scaleY(.46)}.plane-mini{position:absolute;z-index:2;top:10%;right:13%;font-size:28px;filter:drop-shadow(0 5px 8px #071126);transform:rotate(-26deg)}.form-panel{margin:20px 0 58px;padding:24px;border:1px solid var(--line);border-radius:22px;background:rgba(9,18,43,.68);backdrop-filter:blur(12px)}.form-top{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:17px}.form-top h2{margin:3px 0 0;font-size:24px;letter-spacing:-.03em}.form-grid{display:grid;grid-template-columns:1.05fr 1.2fr 1fr 1fr auto;gap:12px;align-items:end}.field{display:grid;gap:7px}.field label{font-size:13px;font-weight:700;color:#bdcce6}.field select,.field input{width:100%;min-height:49px;border:1px solid var(--line);border-radius:11px;background:#111f45;color:var(--ink);padding:0 13px}.field input::-webkit-calendar-picker-indicator{filter:invert(1)}.search{min-height:49px;border:0;border-radius:11px;background:var(--mint);padding:0 20px;color:#092136;font-weight:900;white-space:nowrap}.search:hover{filter:brightness(1.05)}.status{min-height:22px;margin:13px 1px 0;color:#fbb2a3;font-size:14px}.globe-section{padding:20px 0 72px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:23px}.section-heading h2{max-width:530px;margin:5px 0 0;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.05em}.section-heading p{margin:0;color:var(--muted);max-width:290px;font-size:14px}.globe-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(290px,.75fr);gap:26px}.globe-card,.selection-card{border:1px solid var(--line);border-radius:24px;background:rgba(12,24,55,.75)}.globe-card{position:relative;min-height:505px;overflow:hidden;background:radial-gradient(circle at 52% 45%,rgba(57,130,232,.18),transparent 28%),linear-gradient(130deg,#0f1d43,#121d3d)}.stars{position:absolute;inset:0;background-image:radial-gradient(#bcd9ff 1px,transparent 1.5px),radial-gradient(#bcd9ff 1px,transparent 1.5px),radial-gradient(#bcd9ff 1px,transparent 1.5px);background-position:11px 17px,54px 81px,91px 31px;background-size:107px 103px,137px 149px,173px 139px;opacity:.3}.globe{position:absolute;left:50%;top:50%;width:min(390px,69vw);aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid rgba(219,239,255,.48);border-radius:50%;background:radial-gradient(ellipse at 30% 40%,#54bc9d 0 9%,transparent 10%),radial-gradient(ellipse at 58% 30%,#60be87 0 11%,transparent 12%),radial-gradient(ellipse at 68% 59%,#4ba476 0 13%,transparent 14%),radial-gradient(ellipse at 35% 73%,#469270 0 7%,transparent 8%),radial-gradient(circle at 36% 24%,#3f80d3 0,transparent 4%),linear-gradient(145deg,#285cb0,#12336d 68%,#092458);box-shadow:inset -42px -28px 58px rgba(3,12,32,.55),0 22px 58px rgba(0,0,0,.35)}.globe:before,.globe:after{content:"";position:absolute;inset:5%;border:1px solid rgba(235,246,255,.3);border-radius:50%;transform:scaleX(.52) rotate(-30deg)}.globe:after{transform:scaleY(.52) rotate(20deg)}.globe-label{position:absolute;z-index:3;left:20px;top:18px;margin:0;color:#c6d7f5;font-size:13px}.destination{position:absolute;z-index:4;display:grid;place-items:center;gap:3px;border:0;background:none;color:#fff;font-size:12px;font-weight:800;text-shadow:0 2px 5px #071126}.destination:before{content:"";width:13px;height:13px;border:3px solid var(--mint);border-radius:50%;background:#08205a;box-shadow:0 0 0 6px rgba(167,243,208,.12)}.destination:hover:before,.destination[aria-pressed="true"]:before{background:var(--coral);border-color:#fff;box-shadow:0 0 0 8px rgba(255,138,115,.2)}.destination[aria-pressed="true"]{color:var(--mint)}.dest-lisbon{left:31%;top:40%}.dest-mexico{left:17%;top:56%}.dest-tokyo{right:17%;top:42%}.dest-bali{right:23%;bottom:25%}.flight-path{position:absolute;inset:0;pointer-events:none}.flight-path path{fill:none;stroke:var(--mint);stroke-width:2;stroke-dasharray:6 8;opacity:0}.flight-path.active path{opacity:.72;animation:dash 1.2s linear infinite}.plane{position:absolute;z-index:5;left:34%;top:58%;font-size:31px;filter:drop-shadow(0 5px 7px #03102c);transform:translate(-50%,-50%) rotate(18deg)}@keyframes dash{to{stroke-dashoffset:-42}}.selection-card{padding:24px;display:flex;flex-direction:column;min-height:505px}.selection-card h3{margin:4px 0 8px;font-size:28px;line-height:1;letter-spacing:-.05em}.selection-card p{color:var(--muted)}.chosen{margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:15px;background:rgba(35,60,116,.35)}.chosen span{display:block;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.chosen strong{display:block;margin-top:4px;font-size:20px}.selection-card ul{padding-left:19px;color:#bfd0eb;font-size:14px}.key{margin-top:auto;border-top:1px solid var(--line);padding-top:14px;color:#bcd0ea;font-size:13px}.results{display:none;padding:0 0 78px}.results.visible{display:block}.route-panel{position:relative;isolation:isolate;overflow:hidden;margin-bottom:23px;padding:30px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(115deg,rgba(10,25,56,.96),rgba(39,92,135,.76));min-height:205px}.route-panel:before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at 74% 35%,rgba(110,206,164,.44),transparent 12%),radial-gradient(circle at 83% 62%,rgba(255,172,119,.38),transparent 19%),linear-gradient(110deg,transparent 43%,rgba(203,240,255,.1));mix-blend-mode:screen}.route-panel h2{max-width:550px;margin:5px 0 9px;font-size:clamp(28px,4vw,44px);letter-spacing:-.05em;line-height:1}.route-panel p{max-width:550px;margin:0;color:#d1e0fa}.route-badge{display:inline-block;margin-top:17px;border-radius:999px;background:rgba(9,20,46,.64);padding:7px 10px;color:var(--mint);font-size:13px;font-weight:800}.deal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.deal{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#0f1c40}.deal-image{height:126px;padding:13px;background:linear-gradient(130deg,#d97968,#f0be7b 43%,#244c8d);position:relative}.deal:nth-child(2) .deal-image{background:linear-gradient(130deg,#1f78a1,#96d1d3 48%,#f2c17d)}.deal:nth-child(3) .deal-image{background:linear-gradient(130deg,#6a3d82,#db7f65 43%,#f6cf8d)}.deal-image:after{content:"";position:absolute;right:-17px;bottom:-26px;width:124px;height:90px;border-radius:45% 55% 0 0;background:rgba(8,25,56,.29);transform:rotate(-9deg)}.sample{position:relative;z-index:1;display:inline-block;border-radius:999px;background:rgba(8,18,45,.72);padding:5px 8px;color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.deal-body{padding:17px}.deal h3{margin:0 0 7px;font-size:20px;letter-spacing:-.03em}.deal p{margin:0;color:#b9c8e4;font-size:14px}.price{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-top:15px;border-top:1px solid var(--line);padding-top:12px}.price strong{font-size:28px;line-height:1;letter-spacing:-.05em}.price span{color:var(--mint);font-size:12px;font-weight:800}.empty{color:var(--muted);font-size:14px}.foot{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:13px}.foot strong{color:#d3e2fb}@media(max-width:880px){.hero,.globe-layout{grid-template-columns:1fr}.hero{padding-top:45px}.trip-card{max-width:550px}.form-grid{grid-template-columns:1fr 1fr}.search{grid-column:span 2}.globe-card{min-height:455px}.deal-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.shell{width:min(92vw,430px)}.top .notice{display:none}.hero{gap:24px;padding:38px 0 28px}.form-panel{padding:18px}.form-top{display:block}.form-top .notice{margin-top:7px}.form-grid{grid-template-columns:1fr}.search{grid-column:auto}.section-heading{display:block}.section-heading p{margin-top:12px}.globe-card{min-height:410px}.globe{width:310px}.dest-lisbon{left:23%;top:40%}.dest-mexico{left:8%;top:56%}.dest-tokyo{right:9%;top:42%}.dest-bali{right:16%;bottom:21%}.selection-card{min-height:auto}.deal-grid{grid-template-columns:1fr}.route-panel{padding:22px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="top">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">✦</span>Deal Orbit</div>
+    <p class="notice">Vacation packages for student-sized budgets</p>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Sample trip planner</p>
+        <h1 id="page-title">Find your next <em>escape.</em></h1>
+        <p class="lede">Choose a departure city, a place on the globe, and your travel window. Deal Orbit maps the route and surfaces the lowest-priced sample packages first.</p>
+        <div class="stat-row" aria-label="Highlights">
+          <span class="chip">No accounts</span><span class="chip">No live pricing</span><span class="chip">Sample packages only</span>
+        </div>
+      </div>
+      <aside class="trip-card" aria-label="How it works">
+        <h2>Plan a small adventure</h2>
+        <p>Pick your orbit, then watch the route take shape.</p>
+        <div class="orbit" aria-hidden="true"><span class="plane-mini">✈</span></div>
+      </aside>
+    </section>
+
+    <section class="form-panel" aria-labelledby="search-title">
+      <div class="form-top"><div><p class="eyebrow">Build your route</p><h2 id="search-title">Where should we point the plane?</h2></div><p class="notice">All prices are illustrative.</p></div>
+      <form id="deal-form" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="origin">Departure city</label><select id="origin" required><option value="">Choose a city</option><option>San Luis Obispo, CA</option><option>Los Angeles, CA</option><option>San Francisco, CA</option></select></div>
+          <div class="field"><label for="destination-select">Destination</label><select id="destination-select" required><option value="">Pick from the globe</option><option value="Lisbon">Lisbon, Portugal</option><option value="Mexico City">Mexico City, Mexico</option><option value="Tokyo">Tokyo, Japan</option><option value="Bali">Bali, Indonesia</option></select></div>
+          <div class="field"><label for="start">Depart</label><input id="start" type="date" required></div>
+          <div class="field"><label for="end">Return</label><input id="end" type="date" required></div>
+          <button class="search" type="submit">Find deals <span aria-hidden="true">→</span></button>
+        </div>
+        <p id="status" class="status" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="globe-section" aria-labelledby="globe-title">
+      <div class="section-heading"><div><p class="eyebrow">Choose a destination</p><h2 id="globe-title">Tap a pin to set your orbit.</h2></div><p>Each pin is a demo destination. The packages below use fictional sample prices and details.</p></div>
+      <div class="globe-layout">
+        <div class="globe-card">
+          <div class="stars" aria-hidden="true"></div><p class="globe-label">Interactive destination globe</p>
+          <div class="globe" aria-hidden="true"></div>
+          <svg class="flight-path" id="flight-path" viewBox="0 0 800 500" preserveAspectRatio="none" aria-hidden="true"><path d="M260,294 Q420,130 602,210"></path></svg>
+          <span id="plane" class="plane" aria-hidden="true">✈</span>
+          <button class="destination dest-lisbon" type="button" data-destination="Lisbon" aria-pressed="false">Lisbon</button>
+          <button class="destination dest-mexico" type="button" data-destination="Mexico City" aria-pressed="false">Mexico City</button>
+          <button class="destination dest-tokyo" type="button" data-destination="Tokyo" aria-pressed="false">Tokyo</button>
+          <button class="destination dest-bali" type="button" data-destination="Bali" aria-pressed="false">Bali</button>
+        </div>
+        <aside class="selection-card" aria-live="polite">
+          <p class="eyebrow">Route briefing</p><h3 id="selected-name">Pick a pin</h3>
+          <p id="selected-copy">Your destination appears here after you choose it on the globe.</p>
+          <div class="chosen"><span>Route</span><strong id="route-text">Departure → destination</strong></div>
+          <ul><li>Select a city and destination.</li><li>Choose a valid departure and return date.</li><li>See results sorted by total sample price.</li></ul>
+          <p class="key"><strong>Standing rule:</strong> no deal cards appear until every route choice is complete.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="results" class="results" aria-live="polite" aria-labelledby="results-title">
+      <div class="route-panel">
+        <p class="eyebrow">Your sample itinerary</p><h2 id="results-title">Deals for your selected orbit</h2>
+        <p id="results-summary">Choose your route to see packages.</p><span id="route-badge" class="route-badge">Sample prices · ranked low to high</span>
+      </div>
+      <div id="deal-grid" class="deal-grid"></div>
+    </section>
+  </main>
+
+  <footer class="foot"><strong>Deal Orbit is a class-project demo.</strong> Destinations, packages, availability, and prices are fictional illustrative content—not live travel offers or booking advice.</footer>
+</div>
 <script>
 (function(){
-  var box=document.getElementById('liveurl'),btn=document.getElementById('copy'),
-      hint=document.getElementById('copyhint'),guide=document.getElementById('guide');
-  var web=location.protocol==='http:'||location.protocol==='https:';
-  var url=web?location.origin+location.pathname:'';
-  if(web){box.textContent=url;}else{btn.hidden=true;hint.textContent='You are viewing this file directly. Publish it with GitHub Pages to get a real address.';}
-  var host=location.hostname.match(/^([a-z0-9-]+)\.github\.io$/i),
-      repo=location.pathname.split('/').filter(Boolean)[0];
-  if(host&&repo){guide.href='https://github.com/'+host[1]+'/'+repo+'#readme';}
-  btn.addEventListener('click',function(){
-    function pick(){var r=document.createRange();r.selectNodeContents(box);
-      var s=window.getSelection();s.removeAllRanges();s.addRange(r);
-      hint.textContent='Link selected. Press Ctrl+C or Cmd+C to copy it.';}
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){hint.textContent='Copied. Paste it into the Link field in the portal.';},pick);
-    }else{pick();}
+  var destinations={
+    "Lisbon":{name:"Lisbon, Portugal",copy:"Tile-lined streets, Atlantic light, and a city break designed for wandering.",point:{left:"31%",top:"40%"},deals:[
+      {name:"Alfama Weekend",price:579,detail:"Flight + 3 nights · Old-town stay"},
+      {name:"Atlantic City Break",price:748,detail:"Flight + 4 nights · Breakfast included"},
+      {name:"Sunset Tram Escape",price:662,detail:"Flight + 3 nights · Evening city tour"}
+    ]},
+    "Mexico City":{name:"Mexico City, Mexico",copy:"A colorful, food-forward city escape with museums and late-night energy.",point:{left:"17%",top:"56%"},deals:[
+      {name:"Centro Stay",price:419,detail:"Flight + 3 nights · Historic center"},
+      {name:"Casa & Culture",price:535,detail:"Flight + 4 nights · Museum pass sample"},
+      {name:"Weekend Mercado",price:466,detail:"Flight + 3 nights · Market walk sample"}
+    ]},
+    "Tokyo":{name:"Tokyo, Japan",copy:"Neon districts, quiet gardens, and a high-energy city adventure.",point:{left:"83%",top:"42%"},deals:[
+      {name:"Shibuya Snapshot",price:899,detail:"Flight + 3 nights · City hotel"},
+      {name:"Night Train Tokyo",price:1045,detail:"Flight + 5 nights · Rail pass sample"},
+      {name:"Garden & Game",price:958,detail:"Flight + 4 nights · Neighborhood stay"}
+    ]},
+    "Bali":{name:"Bali, Indonesia",copy:"A warm-weather reset of beaches, rice terraces, and slower mornings.",point:{left:"77%",top:"75%"},deals:[
+      {name:"Ubud Reset",price:820,detail:"Flight + 4 nights · Garden guesthouse"},
+      {name:"Coastline Week",price:986,detail:"Flight + 6 nights · Beach-area stay"},
+      {name:"Island Starter",price:874,detail:"Flight + 5 nights · Breakfast sample"}
+    ]}
+  };
+  var destinationSelect=document.getElementById("destination-select"),origin=document.getElementById("origin"),start=document.getElementById("start"),end=document.getElementById("end"),status=document.getElementById("status"),selectedName=document.getElementById("selected-name"),selectedCopy=document.getElementById("selected-copy"),routeText=document.getElementById("route-text"),plane=document.getElementById("plane"),path=document.getElementById("flight-path"),results=document.getElementById("results"),summary=document.getElementById("results-summary"),dealGrid=document.getElementById("deal-grid"),buttons=document.querySelectorAll(".destination");
+  var today=new Date().toISOString().slice(0,10);start.min=today;end.min=today;
+  function selectDestination(key){
+    if(!destinations[key]) return;
+    destinationSelect.value=key;
+    var item=destinations[key];
+    selectedName.textContent=item.name;selectedCopy.textContent=item.copy;
+    buttons.forEach(function(button){button.setAttribute("aria-pressed",String(button.dataset.destination===key));});
+    results.classList.remove("visible");
+    status.textContent="";
+  }
+  buttons.forEach(function(button){button.addEventListener("click",function(){selectDestination(button.dataset.destination);});});
+  destinationSelect.addEventListener("change",function(){selectDestination(destinationSelect.value);});
+  origin.addEventListener("change",function(){routeText.textContent=origin.value?origin.value+" → "+(destinationSelect.value||"destination"):"Departure → destination";results.classList.remove("visible");});
+  function formatDate(value){return new Date(value+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});}
+  function makeDeals(items){
+    dealGrid.textContent="";
+    items.slice().sort(function(a,b){return a.price-b.price;}).forEach(function(deal){
+      var card=document.createElement("article");card.className="deal";
+      var image=document.createElement("div");image.className="deal-image";
+      var tag=document.createElement("span");tag.className="sample";tag.textContent="Sample package";image.appendChild(tag);
+      var body=document.createElement("div");body.className="deal-body";
+      var title=document.createElement("h3");title.textContent=deal.name;
+      var detail=document.createElement("p");detail.textContent=deal.detail;
+      var price=document.createElement("div");price.className="price";
+      var cost=document.createElement("strong");cost.textContent="$"+deal.price.toLocaleString();
+      var note=document.createElement("span");note.textContent="total sample price";
+      price.appendChild(cost);price.appendChild(note);body.appendChild(title);body.appendChild(detail);body.appendChild(price);card.appendChild(image);card.appendChild(body);dealGrid.appendChild(card);
+    });
+  }
+  document.getElementById("deal-form").addEventListener("submit",function(event){
+    event.preventDefault();
+    var key=destinationSelect.value;
+    if(!origin.value||!key||!start.value||!end.value){status.textContent="Choose a departure city, destination, departure date, and return date before viewing deals.";results.classList.remove("visible");return;}
+    if(end.value<=start.value){status.textContent="Choose a return date after the departure date.";results.classList.remove("visible");return;}
+    status.textContent="";
+    var item=destinations[key];routeText.textContent=origin.value+" → "+item.name;
+    plane.style.transition="none";plane.style.left="34%";plane.style.top="58%";path.classList.remove("active");
+    requestAnimationFrame(function(){requestAnimationFrame(function(){plane.style.transition="left 1.15s cubic-bezier(.22,.82,.32,1), top 1.15s cubic-bezier(.22,.82,.32,1), transform .5s";plane.style.left=item.point.left;plane.style.top=item.point.top;path.classList.add("active");});});
+    summary.textContent=origin.value+" to "+item.name+" · "+formatDate(start.value)+"–"+formatDate(end.value)+". Three fictional sample packages, shown from lowest total price to highest.";
+    makeDeals(item.deals);results.classList.add("visible");results.scrollIntoView({behavior:"smooth",block:"start"});
   });
-})();
+}());
 </script>
+</body>
 </html>
